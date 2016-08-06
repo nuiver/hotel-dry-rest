@@ -7,6 +7,16 @@ class BookingsController < ApplicationController
     @bookings = Booking.all
   end
 
+def new
+  @bookings = Booking.new(booking_params)
+
+  if @bookings.safe
+    redirect_to @bookings
+  else
+    render 'new'
+  end
+end
+
   # GET /bookings/1
   # GET /bookings/1.json
   def begin_date

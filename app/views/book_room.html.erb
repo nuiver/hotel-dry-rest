@@ -2,19 +2,19 @@
 
 
    <%= f.label :username %>
-   <%= f.text_field :name %>
+   <%= f.text_field :user_name %>
 
    <%= f.label :arrivaldate %>
-   <%= f.date_field :arrivaldate %>
+   <%= f.date_field :begin_date %>
 
    <%= f.label :departuredate %>
-   <%= f.date_field :departuredate %>
+   <%= f.date_field :end_date %>
 
    <%= f.label :room %>
-   <%= f.text_field :age %>
+   <%= f.number_field :room_id %>
 
-   <%= f.label :num_person %>
-   <%= f.number_field :image_url %>
+   <%= f.label :numberofperson %>
+   <%= f.number_field :num_persons %>
 
-   <%= f.submit (@dinosaur.new_record? ? "Create" : "Update") %>
+   <%= f.submit (@bookings.new_record? ? "Create" : "Update") %>
 <% end %>
