@@ -93,6 +93,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def booking_params
-      params.require(:booking).permit(:begin_date, :end_date, :user_name, :email, :room_id, :num_persons, :made_booking)
+      params.permit(:booking).permit(:begin_date, :end_date, :user_name, :email, :room_id, :num_persons, :made_booking)
     end
 end
