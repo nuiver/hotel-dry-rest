@@ -1,8 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @booking.name %>
+  <strong>Booking number:</strong>
+  <%= @booking.id %>
+
+  <br>
+  Arrival date:
+  <%= @booking.begin_date %>
+
+  <br>
+  Departure date:
+  <%= @booking.end_date %>
+
+  <br>
+  Booked room
+  <%= @booking.room_id %>
+
+  <br>
+  Number of persons
+  <%= @booking.num_persons %>
+
 </p>
 
 <%= link_to 'Edit', edit_booking_path(@booking) %> |
