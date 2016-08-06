@@ -1,6 +1,8 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: [:begin_date, :end_date, :username, :email, :room_id, :num_persons, :made_booking]
 
+
+
   # GET /bookings
   # GET /bookings.json
   def index
@@ -8,16 +10,16 @@ class BookingsController < ApplicationController
   end
 
 def new
-  @bookings = Booking.new(booking_params)
+  @booking = Booking.new(booking_params)
 
-  if @bookings.safe
-    redirect_to @bookings
-  else
-    render 'new'
-  end
+  # if @bookings.safe
+  #   redirect_to @bookings
+  # else
+  #   render 'new'
+  # end
 end
 
-  # GET /bookings/1
+ # GET /bookings/1
   # GET /bookings/1.json
   def begin_date
   end
@@ -91,6 +93,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def booking_params
-      params.require(:booking).permit(:name)
+    #  params.require(:booking).permit(:user_name)
     end
 end
