@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <h3>Hotel Dry Rest</h3>
-    <div class=image>
-    <img class=headerimg, src="/amsterdam_header.jpg">
-    </div>
   </head>
 
   <body>
+    <div class="header">
+      <img class="header-image" src="/amsterdam_header.jpg"/>
+      <br>
+      <h3 class="header-title">Hotel Dry Rest</h3>
+    </div>
+    <ul class="navigation">
+      <li><a href=/> Home </a></li>
+      <li><a href=/rooms> Rooms </a></li>
+      <li><a href=/bookings> Bookings </a> </li>
+      <li><a href=/contact> Contact </a> </li>
+    </ul>
+    </div>
     <%= yield %>
   </body>
 </html>
