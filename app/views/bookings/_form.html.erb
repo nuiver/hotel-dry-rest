@@ -4,7 +4,7 @@
 <%= form_for @booking do |f| %>
 
 
-   <%= f.label :user_name %>
+   <%= f.label "user name" %>
    <%= f.text_field :user_name %>
 
    <%= f.label :arrivaldate %>
@@ -16,7 +16,7 @@
    <%= f.label :room %>
    <%= f.number_field :room_id %>
 
-   <%= f.label :numberofperson %>
+   <%= f.label "number of person" %>
    <%= f.number_field :num_persons %>
 
    <%= f.submit (@booking.new_record? ? "Create" : "Update") %>
