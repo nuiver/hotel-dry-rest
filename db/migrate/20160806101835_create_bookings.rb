@@ -5,7 +5,6 @@ class CreateBookings < ActiveRecord::Migration[5.0]
       t.date :end_date
       t.string :user_name
       t.string :email
-      t.integer :room_id
       t.integer :num_persons
       t.boolean :made_booking
 
@@ -13,3 +12,5 @@ class CreateBookings < ActiveRecord::Migration[5.0]
     end
   end
 end
+
+#hoi
