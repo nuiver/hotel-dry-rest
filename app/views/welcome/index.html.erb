@@ -4,14 +4,59 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    function initialize() {
+      var mapProp = {
+        center:new google.maps.LatLng(52.3651938,4.9049567),
+        zoom:11,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+
   </head>
 
   <body>
-    Het Dry rest hotel ligt op een unieke locatie op de dam in Amsterdam.
-    Vanuit hier kunt u makkelijk alle interessante plekken van Amsterdam bezoeken.
-  <br>
-  <br>
-  <a class="reservate" href="bookings/new">Book a room</a>
     <br>
+    The Dry Rest Hotel is on a perfect location in the centrum of Amsterdam <br>
+    From here you can view the best hotspots in Amsterdam.
+  <br><br><br>
+  <a class="reservate" href="bookings/new">Book a room</a>
+  <div class="main">
+    <br><br><br>
+    <div class="column">
+    <br>
+    <h2>Our most booked room:</h2>
+      <h3>Luxery</h3>
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/5d/e0/96/5de096f1b832861d97f3eb88a7f8db5b.jpg", width="400px">
+      <br><a class="room-button" href= "/rooms">More rooms</a>
+      <br><br>
+    </div>
+    <div class="column">
+      <br>
+      <h2>Review of one of our guests:</h2>
+      <br><br>
+      <h2 class="quote"> "Best experience of my life" </h2>
+      <p class="quote-text"> - Wouter de Vos </p>
+      <p class="quote-text">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+      </p>
+    </div>
+  </div>
+    <div>
+    <h3> Address </h3>
+      <p>Weesperstraat 61<br>
+      1018 VN Amsterdam</p>
+        <div id="googleMap" style="width:500px;height:380px;">
+        </div>
+  </div>
   </body>
 </html>
