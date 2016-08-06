@@ -4,19 +4,19 @@
 <%= form_for @booking do |f| %>
 
 
-   <%= f.label :user_name %>
+   <%= f.label "user_name"  %>
    <%= f.text_field :user_name %>
 
-   <%= f.label :arrivaldate %>
+   <%= f.label "arrivaldate" %>
    <%= f.date_field :begin_date %>
 
-   <%= f.label :departuredate %>
+   <%= f.label "departuredate" %>
    <%= f.date_field :end_date %>
 
-   <%= f.label :room %>
+   <%= f.label "room" %>
    <%= f.number_field :room_id %>
 
-   <%= f.label :numberofperson %>
+   <%= f.label "number of person" %>
    <%= f.number_field :num_persons %>
 
    <%= f.submit (@booking.new_record? ? "Create" : "Update") %>

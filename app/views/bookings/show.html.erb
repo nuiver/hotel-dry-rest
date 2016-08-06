@@ -2,7 +2,11 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @booking.name %>
+  <%= @booking.id %>
+
+  <br>
+  arrival date
+  <%= @booking.begin_date %>
 </p>
 
 <%= link_to 'Edit', edit_booking_path(@booking) %> |
