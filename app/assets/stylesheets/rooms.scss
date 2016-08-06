@@ -1,3 +1,64 @@
 // Place all the styles related to the Rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  color: blue;
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  margin: -33px -33px 0 -33px;
+
+}
+
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.header-title {
+   color: white;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 20px;
+   width: 100%;
+   z-index: 2;
+   font-size: 70px;
+   text-align: center;
+   margin-top: 20px
+}
+
+.reservate {
+  border: 1px solid black;
+}
+
+.navigation {
+  background-color: #EBD2D1;
+  margin: -5px 10px 0 10px;
+  border: 1px solid black;
+}
+
+.navigation li {
+  display: inline;
+  padding: 10px;
+}
