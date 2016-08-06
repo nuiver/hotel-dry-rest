@@ -68,3 +68,11 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 26ms (Views: 11.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-08-06 10:49:10 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/rian/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rian/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 24ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
