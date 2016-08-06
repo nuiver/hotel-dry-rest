@@ -54,6 +54,12 @@ end
   # POST /bookings.json
   def create
     @booking = Booking.new(booking_params)
+    @bookings = Booking.all
+
+    # if !is_available?
+    #   format.html { render :new }
+    #   format.json { render json: @booking.errors, notice: 'Room already booked.' }
+    # end
 
     respond_to do |format|
       if @booking.save
