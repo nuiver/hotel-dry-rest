@@ -3,10 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-background-color: white;
-color: blue;
+  background-color: white;
+  color: blue;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  height: 200px;
+  width: 100vw;
+  margin-left: -10px
 }
 
 .reservate {
-  border: 1px solid black
+  border: 1px solid black;
+}
+
+.navigation {
+  background-color: #EBD2D1;
+}
+
+.navigation li {
+  display: inline;
+
+  padding: 10px;
 }
