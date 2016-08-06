@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-  before_action :set_room, only: [:name_t, :price, :beds,]
+  before_action :set_room, only: [:name_t, :price, :beds]
 
   # GET /rooms
   # GET /rooms.json
