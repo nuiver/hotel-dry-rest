@@ -11,12 +11,19 @@
   </thead>
 
   <tbody>
-    <% @bookings.each do |booking| %>
+    <% bookings_sorted = @bookings.sorted_by_begin_date %>
+
+    <% bookings_sorted.each do |booking| %>
       <tr>
-        <td><%= booking.name %></td>
-        <td><%= link_to 'Show', booking %></td>
-        <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
-        <td><%= link_to 'Destroy', booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= booking.user_name %></td>
+        <td><%= booking.begin_date %></td>
+        <td><%= booking.end_date %></td>
+        <td><%= booking.room_id %></td>
+      </tr>
+      </tr>
+        <td class = "booking--link"><%= link_to 'Show', booking %></td>
+        <td class = "booking--link"><%= link_to 'Edit', edit_booking_path(booking) %></td>
+        <td class = "booking--link"><%= link_to 'Destroy', booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
