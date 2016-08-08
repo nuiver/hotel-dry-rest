@@ -10,7 +10,6 @@ class Booking < ApplicationRecord
 
     selection = @bookings.select { |b| b[:room_id] == self[:room_id] }
     check = true
-    byebug
     selection.each do |existing_booking|
       if self[:begin_date] >= existing_booking[:end_date]
         check = true
